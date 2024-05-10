@@ -3,7 +3,9 @@
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
     "mongodb": "^6.5.0",
-    "node": "^22.0.0"
+    "mongoose": "^8.3.4",
+    "node": "^22.0.0",
+    "nodeman": "^1.1.2"
   },
   "name": "api",
   "version": "1.0.0",
