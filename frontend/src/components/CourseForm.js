@@ -96,7 +96,7 @@ export default CourseForm;
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import './css/CourseForm.css';
+import './css/CourseForm.css'; // Import the CSS file
 
 function CourseForm({ course = {}, onSave }) {
     // Initialize state variables for form fields
@@ -190,4 +190,3 @@ function CourseForm({ course = {}, onSave }) {
 }
 
 export default CourseForm;
-

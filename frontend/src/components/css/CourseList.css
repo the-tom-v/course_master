@@ -49,3 +49,75 @@
         text-align: right;
     }
 }
+/* CourseList.css */
+.add-course-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-course-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* CourseList.css */
+
+.course-list-container {
+    padding: 20px;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.responsive-table th {
+    background-color: #f2f2f2;
+}
+
+.responsive-table a {
+    text-decoration: none;
+    color: blue;
+}
+
+.responsive-table button {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .responsive-table {
+        display: block;
+        overflow-x: auto;
+    }
+    .responsive-table th,
+    .responsive-table td {
+        display: block;
+        padding: 8px 0;
+        width: 100%;
+    }
+    .responsive-table th {
+        font-weight: bold;
+    }
+    .responsive-table td {
+        text-align: right;
+    }
+}
