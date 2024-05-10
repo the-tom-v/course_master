@@ -6,13 +6,19 @@ import CourseFormPage from './pages/CourseFormPage';
 function App() {
     return (
         <div>
-        <div>
-            <CourseListPage/>
-        </div>
+        <center>
         <div>
             <CourseFormPage/>
         </div>
+        <div>
+            <CourseListPage/>
         </div>
+        </center>
+        <div>
+            
+        </div>
+        </div>
+        
        
     );
 }

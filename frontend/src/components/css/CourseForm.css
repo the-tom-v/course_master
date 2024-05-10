@@ -1,0 +1,49 @@
+/* CourseForm.css */
+
+/* Style for the form container */
+.course-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Style for form groups (label + input/textarea) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for form controls (inputs and textareas) */
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for the save button */
+.btn-save {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Save button hover effect */
+.btn-save:hover {
+    background-color: #45a049;
+}

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+import './css/CourseList.css';
+
 function CourseList() {
     const [courses, setCourses] = useState([]);
 
@@ -23,18 +25,37 @@ function CourseList() {
     return (
         <div>
             <h1>List of Courses</h1>
-            <ul>
-                {courses.map(course => (
-                    <li key={course._id}>
-                        <div><strong>Name:</strong> {course.name}</div>
-                        <div><strong>Description:</strong> {course.description}</div>
-                        <div><strong>Duration:</strong> {course.duration} months</div>
-                        <div><strong>Introductory Video:</strong> <a href={course.introVideo} target="_blank" rel="noreferrer">Watch</a></div>
-                        <div><strong>Fee:</strong> ${course.fee}</div>
-                        
-                    </li>
-                ))}
-            </ul>
+            <table className="responsive-table">
+                {/* Table header */}
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Duration (months)</th>
+                        <th>Introductory Video</th>
+                        <th>Fee</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                {/* Table body */}
+                <tbody>
+                    {courses.map(course => (
+                        <tr key={course._id}>
+                            <td>{course.name}</td>
+                            <td>{course.description}</td>
+                            <td>{course.duration}</td>
+                            <td>
+                                <a href={course.introVideo} target="_blank" rel="noreferrer">
+                                    Watch
+                                </a>
+                            </td>
+                            <td>${course.fee}</td>
+                            
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 }
