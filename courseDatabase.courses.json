@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "663dc463e982083e39113714"
+  },
+  "name": "java",
+  "description": "rerfer",
+  "duration": "3",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "10000",
+  "createdAt": {
+    "$date": "2024-05-10T06:53:23.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc496e982083e39113716"
+  },
+  "name": "java",
+  "description": "rerfer",
+  "duration": "3",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "10000",
+  "createdAt": {
+    "$date": "2024-05-10T06:54:14.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc51ee982083e39113724"
+  },
+  "name": "dasd",
+  "description": "asfasf",
+  "duration": "6",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "300",
+  "createdAt": {
+    "$date": "2024-05-10T06:56:30.263Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc62fe982083e3911372e"
+  },
+  "name": "sfsdf",
+  "description": "sdgsdgs",
+  "duration": "6",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "6777",
+  "createdAt": {
+    "$date": "2024-05-10T07:01:03.436Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc6c4e982083e39113732"
+  },
+  "name": "dvfsd",
+  "description": "sdvfs",
+  "duration": "1",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "566",
+  "createdAt": {
+    "$date": "2024-05-10T07:03:32.420Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc7b8e982083e39113738"
+  },
+  "name": "gfdf",
+  "description": "bfb",
+  "duration": "4",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "789",
+  "createdAt": {
+    "$date": "2024-05-10T07:07:36.722Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc846e982083e3911373e"
+  },
+  "name": "fsdf",
+  "description": "dsgfsdgs",
+  "duration": "5",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "232",
+  "createdAt": {
+    "$date": "2024-05-10T07:09:58.462Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc8c5e982083e39113746"
+  },
+  "name": "fsfv",
+  "description": "dzv",
+  "duration": "3",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "435",
+  "createdAt": {
+    "$date": "2024-05-10T07:12:05.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663dc8eae982083e3911374c"
+  },
+  "name": "fczsv",
+  "description": "vzv",
+  "duration": "1",
+  "introVideo": "https://www.youtube.com/watch?v=ToBH0KT2__Y",
+  "fee": "4545",
+  "createdAt": {
+    "$date": "2024-05-10T07:12:42.629Z"
+  },
+  "__v": 0
+}]
