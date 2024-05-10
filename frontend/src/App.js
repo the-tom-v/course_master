@@ -31,6 +31,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CourseList from './components/CourseList';
 import CourseForm from './components/CourseForm';
 import EditCourse from './components/EditCourse';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
                 <Route path="/edit-course/:id" element={<EditCourse />} />
                 
             </Routes>
+            <ToastContainer />
         </Router>
     );
 }

@@ -97,6 +97,11 @@ export default CourseForm;
 import React, { useState } from 'react';
 import axios from 'axios';
 import './css/CourseForm.css'; // Import the CSS file
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function CourseForm({ course = {}, onSave }) {
     // Initialize state variables for form fields
@@ -106,9 +111,11 @@ function CourseForm({ course = {}, onSave }) {
     const [introVideo, setIntroVideo] = useState(course.introVideo || '');
     const [fee, setFee] = useState(course.fee || '');
 
+    const navigate = useNavigate();
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
         const newCourse = {
             name,
             description,
@@ -116,17 +123,31 @@ function CourseForm({ course = {}, onSave }) {
             introVideo,
             fee,
         };
+        
         try {
             if (course._id) {
                 // Update existing course
                 await axios.put(`http://localhost:3001/courses/${course._id}`, newCourse);
+                toast.success('Course updated successfully!');
             } else {
                 // Create new course
                 await axios.post('http://localhost:3001/courses', newCourse);
+                toast.success('Course created successfully!');
+                navigate('/');
+                
+        
             }
+            
             onSave(); // Call onSave function after saving course
-        } catch (error) {
+            
+            
+           
+        } 
+        catch (error) {
             console.error('Error saving course:', error);
+            
+            
+            
         }
     };
 

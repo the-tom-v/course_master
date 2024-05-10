@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './css/CourseList.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function CourseList() {
@@ -25,6 +28,7 @@ function CourseList() {
     const handleDelete = async (id) => {
         try {
             await axios.delete(`http://localhost:3001/courses/${id}`);
+            toast.success('Course deleted successfully!');
             // Update course list after deletion
             setCourses(courses.filter(course => course._id !== id));
         } catch (error) {

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './css/CourseForm.css'; // Use the same CSS styles as in CourseForm.js
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function EditCourse() {
     const { id } = useParams(); // Get course ID from URL
     const navigate = useNavigate(); // To navigate after editing the course
@@ -35,11 +36,16 @@ function EditCourse() {
         try {
             // Update course
             await axios.put(`http://localhost:3001/courses/${id}`, course);
-            navigate('/courses'); // Redirect to the course list page
+            // Show success notification
+            toast.success('Course updated successfully!');
+            // Redirect to the course list page
+            navigate('/');
         } catch (error) {
-            console.error('Error updating course:', error);
+            // Show error notification
+            toast.error('Error updating course:', error);
         }
     };
+    
 
     // Handle form field changes
     const handleChange = (e) => {
